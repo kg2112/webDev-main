@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>If Statements</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+            #colorReturned {
+                width: 200px;
+                height: 200px;
+                background-color: black;
+                display: none;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        Guess a Color: <select id="colorGuess">
+            <option value="1">Red</option>
+            <option value="2">Orange</option>
+            <option value="3">Yellow</option>
+        </select>
+
+        <br><br><button id="runTest">Guess the Color!</button><br><br>
+        <div id="colorReturned"></div>
+
+        <script>
+
+            var myColor = parseInt(document.getElementById("colorGuess").value)
+
+            // -----------------------------------------------------------------
+            // test to see if button clicked then run code for guessing game
+            // -----------------------------------------------------------------
+
+            document.getElementById("runTest").onclick = function() {
+
+                myColor = parseInt(document.getElementById("colorGuess").value)
+
+                  // store random number between 1 and 3
+                  // red = 1
+                  // orange = 2
+                  // yellow = 3
+
+                var colorMatch // color name matched w/ number
+                var colorValue = (Math.floor(Math.random() * 3)+1);
+
+                //alert("The user picked "+myColor);
+                //alert("The computer picked"+colorValue);
+
+                if (colorValue==1) {  // test for red
+                    colorMatch = "Red";
+                    document.getElementById("colorReturned").style.display = "block";
+                    document.getElementById("colorReturned").style.backgroundColor = "red";
+
+                    if (colorValue == myColor) {
+                        alert("You're correct! The Color was "+colorMatch);
+                    }
+                    else {
+                        alert("Sorry! You're wrong! The correct Color was "+colorMatch);
+                    }
+                }
+
+                else if (colorValue==2) {  // test for orange
+                    colorMatch = "Orange";
+                    document.getElementById("colorReturned").style.display = "block";
+                    document.getElementById("colorReturned").style.backgroundColor = "orange";
+                    if (colorValue == myColor) {
+                        alert("You're correct! The Color was "+colorMatch);
+                    }
+                    else {
+                        alert("Sorry! You're wrong! The correct Color was "+colorMatch);
+                    }
+                }
+
+                else {  // test for yellow
+                    colorMatch = "Yellow";
+                    document.getElementById("colorReturned").style.display = "block";
+                    document.getElementById("colorReturned").style.backgroundColor = "yellow";
+                    if (colorValue == myColor) {
+                        alert("You're correct! The Color was "+colorMatch);
+                    }
+                    else {
+                        alert("Sorry! You're wrong! The correct Color was "+colorMatch);
+                    }
+                }
+
+            }
+
+        </script>
+
+    </body>

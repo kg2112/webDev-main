@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--Provides header info or value of content attribute-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Essential Web Developer Course</title>
+
+        <style>
+
+            /* unvisited link */
+            a:link {
+                color: #00ff00;
+                text-decoration: underline;
+            }
+
+            /* visited link */
+            a:visited {
+                color: rgb(0, 138, 184);
+                text-decoration: underline;
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: orange;
+                text-decoration: none;
+            }
+
+            /* selected link */
+            a:active {
+                color: #0000ff;
+                text-decoration: none;
+            }
+
+            @font-face { 
+                font-family: 'CooperHewitt'; 
+                src: url('fonts/CooperHewitt-OTF-public/CooperHewitt-Bold.otf');
+                font-style: normal;
+                font-weight: 100;
+            }
+
+            h1 {
+                color:ghostwhite;
+                font-family: CooperHewitt;
+                font-size: 32px;
+            }
+
+            h3 {
+                color:black;
+                font-family: CooperHewitt;
+                font-size: 16px;
+                font-weight: lighter;
+            }
+
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #header {
+                background-color: black;
+                color: white;
+                font-family:Arial, Helvetica, sans-serif;
+                text-align: center;
+                padding: 15px;
+
+            }
+    
+            #navigation {
+                line-height: 30px;
+                background-color: #eeeeee;
+                font-family: Arial, Helvetica, sans-serif;
+                height: 420px;
+                width: 100px;
+                float: left;
+                padding: 15px;
+            }
+
+            #section {
+                width: 500px;
+                float: left;
+                padding: 15px;
+            }
+
+            #footer {
+                background-color: black;
+                color: white;
+                padding: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;        
+                text-align: center;
+                clear: both;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        
+        <div id="header">
+            <h1>Web Development</h1>
+        </div>
+    
+        <!--Anchor tags for links-->
+        <div id="navigation">
+            <a href="http://www.udemy.com" target="_blank" title="Udemy">HTML</a><br>
+            <a href="#">CSS</a><br>
+            <a href="#">PHP</a><br>
+        </div>
+
+        <!--Anchor tags for links-->
+        <div id="section">
+            <h3>Learn to Code</h3>
+            <p>Click the following image to checkout the best online learning resource on the Web:<br><br>
+                <a href="http://www.udemy.com" target="_blank" title="Udemy"><img src="images/Screenshot.jpg" width="500" alt="Udemy Course"></a>
+            </p>
+            <p>Or <a href="http://www.udemy.com" target="_blank" title="Udemy">click here</a> to learn more about other Udemy courses.</p>
+        </div>
+
+        <div id="footer">
+            Copyright&copy; Kira Gallagher
+        </div>
+        
+    </body>
+
+</html>

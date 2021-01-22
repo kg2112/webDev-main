@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Input Values, Operators, and Data Types</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+
+        </style>
+
+    </head>
+    <body>
+
+        <input type="text" id="character"><br>
+        <button id="addCharacter">Add Character!</button>
+
+        <p id="content"></p>
+
+        <script>
+
+            var myArray = ["Superman","Batman","Hulk"];
+
+            var newChar = document.getElementById("character").value;
+            
+            document.getElementById("addCharacter").onclick = function() {
+                newChar = document.getElementById("character").value;
+                myArray.push(newChar);
+
+                document.getElementById("content").innerHTML = "New Array: " + myArray;
+            }
+
+
+            //document.write(myArray);
+            //document.write(myArray[0]);
+
+            //myArray[1] = "Superwoman";
+
+            //myArray.push("Captain America");
+
+            //document.getElementById("content").innerHTML = myArray;
+
+            //myArray.pop();
+
+            //document.getElementById("content").innerHTML = myArray;
+
+            //myArray.shift();
+
+            //document.getElementById("content").innerHTML = myArray;
+
+            //myArray.unshift("Iron Man");
+
+            //document.getElementById("content").innerHTML = myArray;
+
+            //delete myArray[0];
+
+            //document.getElementById("content").innerHTML = myArray;
+
+            //document.write(myArray[0]);
+
+            //myArray.splice(0,2);
+
+            //document.getElementById("content").innerHTML = myArray;
+
+            // myArray.splice(1,0,"Spider Man");
+
+            // document.getElementById("content").innerHTML = myArray;
+
+
+
+
+
+        </script>
+
+    </body>

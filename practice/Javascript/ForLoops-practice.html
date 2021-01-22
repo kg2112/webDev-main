@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>For Loops</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="output"></div>
+        
+        <script>
+
+            var forLoopArray = ["circles","squares","oranges","cars","cats","bikes","houses","people"];
+
+            var forLoopStatement ="<ul>";
+
+            for (var x=0; x<forLoopArray.length; x++) {
+                forLoopStatement=forLoopStatement+"<li>"+forLoopArray[x]+"</li>";
+            }
+
+            forLoopStatement=forLoopStatement+"</ul>";
+
+            document.getElementById("output").innerHTML=forLoopStatement;
+
+
+        </script>
+
+    </body>
+
+</html>

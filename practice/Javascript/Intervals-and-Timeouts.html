@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Intervals & Timeouts</title>
+
+        <style>
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="showTimer"></div><br>
+        <button onclick="stopTimer()">Stop Timer</button>
+
+        <script>
+        
+        //var testInterval = setInterval(function() { alert("This is my Interval Alert") }, 1000);
+
+        //var testTimeout = setTimeout(function() {alert("This is my Timeout Alert") }, 3000);
+
+        var myInterval = setInterval(function() { timer() }, 1000);
+
+        var myButton = document.getElementsByTagName("button")[0];
+        alert(myButton.innerHTML);
+
+        function timer() {
+            var theDate = new Date();
+            var theTime = theDate.toLocaleTimeString();
+            document.getElementById("showTimer").innerHTML = theTime;
+        }
+
+        function stopTimer() {
+            clearInterval(myInterval);
+        }
+
+        </script>
+
+    </body>
+
+</html>

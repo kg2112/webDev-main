@@ -1,0 +1,103 @@
+@font-face { 
+    font-family: 'CooperHewitt'; 
+    src: url('fonts/CooperHewitt-OTF-public/CooperHewitt-Medium.otf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+body {
+    width:100%;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: thin;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background-image: url("images/logo_xsmall_thin.png");
+    margin: 10px;
+    float: left;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+#navLinks {
+    width:auto;
+    height: 75px;
+    padding: 10px 20px;
+}
+
+.topNav {
+    padding: 4px 20px;
+    line-height: 50px;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+}
+
+
+a.topNav:link {
+    font-size: 1em;
+    color: white;
+    font-family: CooperHewitt;
+    font-weight: 200;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+a.topNav:visited {
+    font-size: 1em;
+    color: white;
+    font-family: CooperHewitt;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+a.topNav:hover {
+    font-size: 1em;
+    color: rgba(143, 188, 143, 0.8);
+    font-family: CooperHewitt;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    line-height: 50px;
+    display: block;
+    margin-top: 30px;
+}
+
+#box1 {
+    width: 400px;
+    height: 200px;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    margin: 20px;
+}
+
+#box2 {
+    width: 400px;
+    height: 200px;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    margin: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Input Values</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+
+        </style>
+
+    </head>
+    <body>
+        <div id="messageBox">This is the Message Box.</div>
+        <!--input + operators practice-->
+        <input id="inputBox" type="text" value="10"> + <input id="inputBox2" type="text" value="10">
+        <button id="buttonClick">Add Numbers!</button>
+
+        <script>
+            var inputBoxVariable = document.getElementById("inputBox").value; 
+            var inputBoxVariable = document.getElementById("inputBox2").value; 
+
+            // operators practice
+            document.getElementById("buttonClick").onclick = function() {
+                inputBoxVariable = parseInt(document.getElementById("inputBox").value); 
+                inputBoxVariable2 = parseInt(document.getElementById("inputBox2").value); 
+
+                finalNumber = inputBoxVariable + inputBoxVariable2;
+
+                document.getElementById("messageBox").innerHTML = finalNumber
+            }
+        </script>
+
+    </body>
+</html>

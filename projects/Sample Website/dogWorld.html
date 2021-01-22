@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduction to CSS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!--Inline Styling-->
+        <style>
+        
+        #header {
+            background-color:rgba(143, 188, 143, 0.5);
+            color:#ffffff;
+            font-family: CooperHewitt;
+            font-size: 48px;        
+            text-align: center;
+            padding: 12px;
+        }
+
+        #footer {
+            background-color:rgba(143, 188, 143, 0.5);
+            color:#ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;        
+            text-align: center;
+        }
+        
+        input {
+            color: black;
+        }
+        </style>
+    </head>
+
+    <body style="background-color: black;">
+
+        <div id="header">
+            <h1>WELCOME TO DOGS</h1>
+        </div>
+    
+        <div id="section">
+            <table>
+                <tr>
+                    <td width=50%>
+                        <h2>This is Doug</h2>
+                        <p>This is a picture of a cute dog. This dog is very cute. </p>
+                        <img src="images/dog.gif" width="200" height="300" alt="Cute Dog">
+            
+                        <h3>Fun Facts About Doug</h3>
+                        <p>This is some information about the cute dog.</p>
+                        <ul>
+                            <li>Doug likes to go fast.</li>
+                            <li>He is very fashionable.</li>
+                            <li>Doug has lots of doggo friends.</li>                
+                        </ul>
+                    </td>
+                    <td width=50%>
+                        <h2>This is Champ</h2>
+                        <p>This is a picture of another cute dog. This dog is also very cute. </p>
+                        <img src="images/dog2.gif" width="200" height="300" alt="Cute Dog">
+
+                        <h3>Fun Facts About Champ</h3>
+                        <p>This is some information about the cute dog.</p>
+                        <ol>
+                            <li>Champ enjoys long walks on the beach.</li>
+                            <li>He is also very fashionable.</li>
+                            <li>Doug is Champ's best friend.</li>                
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+
+            <!--HTML Form-->
+            <div >
+                <h1 class="green1">Need a Ride?</h1>
+                <p>Doug and Champ are here to help! They have been rated as the top Chauffeurs in the U.S.<br><br>Sign Up below!</p>
+                <form name="myFirstForm" method="post" action="#">
+                    First Name: <input type="text" width="250" name="firstName"><br><br>
+                    Last Name: <input type="text" width="250" name="lastName"><br><br>
+                    Email: <input type="email" width="250" name="emailAddress"><br><br>
+                    Password: <input type="password" width="250" name="password"><br><br>
+                    State: <select>
+                        <option name="California">California</option>
+                        <option name="New York">New York</option>
+                    </select>
+                    Date: <input type="date"><br><br>
+                    Comments: <textarea name="comments" cols="30" rows="10"></textarea><br><br>
+                    <input type="button" value="Submit" name="submitButton">
+                </form>
+            </div>
+        </div>
+
+        <div id="footer">
+            <h3 class="white1">Copyright &copy; Kira Gallagher </h3>
+        </div>
+       
+    </body>
+</html>

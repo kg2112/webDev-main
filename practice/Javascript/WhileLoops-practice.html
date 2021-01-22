@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>While Loops</title>
+
+        <style>
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="messageBox"></div>
+        <input id="myNumber" type="number">&nbsp;&nbsp;
+        <button id="guessNumber">Guess the Number!</button>
+
+        <script>
+
+            var numberGuessed; var computerGuess; var computerCorrect = false;
+            var numberOfTries = 1;
+
+            document.getElementById("guessNumber").onclick = function() {
+
+                computerGuess = (Math.random() * 10);
+                computerGuess = Math.floor(computerGuess + 1);
+
+                numberGuessed = parseInt(document.getElementById("myNumber").value);
+
+                if (numberGuessed == computerGuess) {
+                    alert("Yes! The computer guessed your number "+numberGuessed+" correct!");
+                }
+
+                else {
+                    //alert("No! The computer was wrong! It guessed "+computerGuess);
+                    while (computerCorrect==false) {
+                        computerGuess = (Math.random() * 10);
+                        computerGuess = Math.floor(computerGuess + 1);
+                        alert("Computer's New Guess Is: "+computerGuess);
+                        numberOfTries++
+                        if (numberGuessed==computerGuess) {
+                            computerCorrect = true;
+                            alert("Computer guessed the number! It took "+numberOfTries+" tries!");
+                        }
+                    }
+                }
+
+                //alert("Number of Fingers Behind My Back: "+numberGuessed);
+                //alert("Computer Guess: "+computerGuess);
+            }
+
+        </script>
+
+    </body>
+
+
+</html>
